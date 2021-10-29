@@ -1,20 +1,19 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,100&display=swap');
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: 'Montserrat';
 }
 
 a{
     text-decoration: none;
     text-transform: uppercase;
-    color: grey;
-    font-family: 'Montserrat';
+    color: #a5a4a5;
 }
 
-a::before {
-    text-decoration-line: underline;
+a:hover {
+    text-decoration: underline;
 }
 
 body {
@@ -23,7 +22,7 @@ body {
 }
 
 #text-logo {
-    border-right: 1px solid grey;
+    border-right: 1px solid #a5a4a5;
     padding-right: 20px;
     height: 80px;
     margin-top: 30px;
@@ -39,12 +38,100 @@ nav ul li {
 }
 
 div.container {
-    height: 500px;
-    background-image: url("../img/banner.jpg");
+    height: 650px;
+    background: linear-gradient( rgba(0, 0, 0, 0.2),  rgba(0, 0, 0, 0.2)), url("../img/banner.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
     position: relative;
+    border-radius: 20px;
+    margin-bottom: 40px;
 }
 
-div.text-img-container {
+div h1 {
     position: absolute;
-    bottom: 30px;
+    bottom: 150px;
+    margin-left: 125px;
+    color: rgba(250,246,247,255);
+}
+
+div.text-img-container p {
+    position: absolute;
+    bottom: 75px;
+    margin-left: 125px;
+    color: rgba(250,246,247,255);
+    font-size: 20px;
+}
+
+
+div p {
+    font-size: 20px;
+    color: #a0a1a0;
+}
+
+.c-leader {
+    margin-bottom: 20px;
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+div span {
+    font-size: 25px;
+    margin-bottom: 20px;
+    display: inline-block;
+}
+
+.c {
+    float: left;
+}
+
+.sx,.dx {
+    width: 20%;
+}
+
+.center {
+    width: 58%;
+    padding: 0 2%;
+}
+
+.imagesx, .imagec, .imagedx {
+    width: 100%;
+    height: 250px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+}
+
+.imagesx {
+    background: linear-gradient( rgba(0, 0, 0, 0.2),  rgba(0, 0, 0, 0.2)), url("../img/img-1.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.imagec {
+    background: linear-gradient( rgba(0, 0, 0, 0.2),  rgba(0, 0, 0, 0.2)), url("../img/banner-2.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.imagedx {
+    background: linear-gradient( rgba(0, 0, 0, 0.2),  rgba(0, 0, 0, 0.2)), url("../img/img-3.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+footer {
+    text-align: center;
+    font-size: 25px;   
+}
+
+footer span {
+    margin-top: 40px;
+    color: red;
 }
